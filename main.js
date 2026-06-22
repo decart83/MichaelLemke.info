@@ -94,10 +94,12 @@
       list.forEach((p) => {
         const card = el("div", "card project-card");
         if (p.thumb) {
+          const thumb = el("div", "thumb");
           const img = el("img");
           img.src = p.thumb; img.alt = p.title; img.loading = "lazy";
           img.onerror = () => { img.style.display = "none"; };
-          card.appendChild(img);
+          thumb.appendChild(img);
+          card.appendChild(thumb);
         }
         if (p.tag) card.appendChild(el("span", "tag", p.tag));
         card.appendChild(el("h3", null, p.title));
@@ -113,4 +115,9 @@
       });
     });
   }
+
+  // --- Graceful fallback for detail-page hero images ---
+  document.querySelectorAll(".detail-figure img").forEach((img) => {
+    img.addEventListener("error", () => { img.style.display = "none"; });
+  });
 })();
