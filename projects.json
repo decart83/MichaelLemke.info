@@ -1,0 +1,23 @@
+[
+  {
+    "title": "IL School Financials",
+    "thumb": "https://michaellemke.info/images/portfolio/il_warning.png",
+    "summary": "Data visualization project on Illinois school financial health.",
+    "link": "https://public.tableau.com/profile/michael.lemke#!/vizhome/IL_Schools/Dashboard",
+    "detail": "p_il_financials.html"
+  },
+  {
+    "title": "Pilot Light Foundation",
+    "thumb": "https://michaellemke.info/images/portfolio/pilot.png",
+    "summary": "Custom website development.",
+    "link": "http://pilotlightfund.org/",
+    "detail": "p_pilot.html"
+  },
+  {
+    "title": "Chicago Crime",
+    "thumb": "https://michaellemke.info/images/portfolio/chicago_crime.png",
+    "summary": "Data visualization project exploring Chicago crime patterns.",
+    "link": "https://public.tableau.com/profile/michael.lemke#!/vizhome/chicago_crime/Dashboard",
+    "detail": "p_crime.html"
+  }
+]
