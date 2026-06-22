@@ -33,9 +33,9 @@
   },
   {
     "title": "Pilot Light Foundation",
-    "thumb": "",
-    "summary": "Web consulting: fixed critical crashes, added content, and improved the design. (Site no longer online.)",
-    "link": "",
+    "thumb": "images/pilot.jpg",
+    "summary": "Web consulting: fixed critical crashes, added content, and improved the design.",
+    "link": "https://pilotlightfund.org/",
     "detail": "p_pilot.html",
     "tag": "Web dev"
   },
