@@ -5,7 +5,7 @@
     "start": "May 2025",
     "end": "Present",
     "location": "Remote",
-    "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJTRiI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMyOWI1ZTgiLz4KICA8dGV4dCB4PSIzMiIgeT0iMzIiIGR5PSIwLjM1ZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJJbnRlciwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMjYiIGZpbGw9IiNmZmZmZmYiPlNGPC90ZXh0Pgo8L3N2Zz4K",
+    "logo": "https://www.google.com/s2/favicons?domain=snowflake.com&sz=128",
     "summary": "GTM strategy and operations for the Solution Engineering organization."
   },
   {
@@ -14,7 +14,7 @@
     "start": "May 2022",
     "end": "May 2025",
     "location": "Lansdale, PA \u00b7 Remote",
-    "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJBWCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMwMDQ1N2MiLz4KICA8dGV4dCB4PSIzMiIgeT0iMzIiIGR5PSIwLjM1ZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJJbnRlciwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMjYiIGZpbGw9IiNmZmZmZmYiPkFYPC90ZXh0Pgo8L3N2Zz4K",
+    "logo": "https://www.google.com/s2/favicons?domain=alteryx.com&sz=128",
     "summary": "Built industry & LOB solution blueprints, a scalable content delivery system, and self-service data pipelines/dashboards to accelerate the democratization of analytics."
   },
   {
@@ -23,7 +23,7 @@
     "start": "Nov 2020",
     "end": "May 2022",
     "location": "Princeton, NJ",
-    "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJFVFMiPgogIDxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjEyIiBmaWxsPSIjMGEyMzQyIi8+CiAgPHRleHQgeD0iMzIiIHk9IjMyIiBkeT0iMC4zNWVtIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iSW50ZXIsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iODAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIj5FVFM8L3RleHQ+Cjwvc3ZnPgo=",
+    "logo": "https://www.google.com/s2/favicons?domain=ets.org&sz=128",
     "summary": "Founded the ETS Center of Intelligence \u2014 data governance, modern analytics stack, a project-performance system that surfaced $7M in reinvestable funds, and a Python facial-detection system that cut security cost by $2M."
   },
   {
@@ -32,7 +32,7 @@
     "start": "May 2019",
     "end": "Nov 2020",
     "location": "Princeton, NJ",
-    "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJFVFMiPgogIDxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjEyIiBmaWxsPSIjMGEyMzQyIi8+CiAgPHRleHQgeD0iMzIiIHk9IjMyIiBkeT0iMC4zNWVtIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iSW50ZXIsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iODAwIiBmb250LXNpemU9IjIwIiBmaWxsPSIjZmZmZmZmIj5FVFM8L3RleHQ+Cjwvc3ZnPgo=",
+    "logo": "https://www.google.com/s2/favicons?domain=ets.org&sz=128",
     "summary": "Led market exploration in China, partnered with TAL on an English-language-learning app, and built a data automation framework with Chinese partners."
   },
   {
@@ -41,7 +41,7 @@
     "start": "Apr 2018",
     "end": "May 2019",
     "location": "Greater Chicago Area",
-    "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJBOSI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMwMGEzYTEiLz4KICA8dGV4dCB4PSIzMiIgeT0iMzIiIGR5PSIwLjM1ZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJJbnRlciwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMjYiIGZpbGw9IiNmZmZmZmYiPkE5PC90ZXh0Pgo8L3N2Zz4K",
+    "logo": "https://www.google.com/s2/favicons?domain=area9lyceum.com&sz=128",
     "summary": "Led learning architecture for adaptive education products."
   },
   {
@@ -50,7 +50,7 @@
     "start": "Feb 2016",
     "end": "Apr 2018",
     "location": "Chicago, IL",
-    "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJNSCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNjODEwMmUiLz4KICA8dGV4dCB4PSIzMiIgeT0iMzIiIGR5PSIwLjM1ZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJJbnRlciwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMjYiIGZpbGw9IiNmZmZmZmYiPk1IPC90ZXh0Pgo8L3N2Zz4K",
+    "logo": "https://www.google.com/s2/favicons?domain=mheducation.com&sz=128",
     "summary": "Product leadership across higher-education digital learning."
   },
   {
@@ -59,7 +59,7 @@
     "start": "Sep 2012",
     "end": "Feb 2016",
     "location": "Chicago, IL",
-    "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJNSCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNjODEwMmUiLz4KICA8dGV4dCB4PSIzMiIgeT0iMzIiIGR5PSIwLjM1ZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJJbnRlciwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMjYiIGZpbGw9IiNmZmZmZmYiPk1IPC90ZXh0Pgo8L3N2Zz4K",
+    "logo": "https://www.google.com/s2/favicons?domain=mheducation.com&sz=128",
     "summary": "Managed the technical components of McGraw-Hill's Higher Education Math titles."
   },
   {
@@ -77,7 +77,7 @@
     "start": "Feb 2009",
     "end": "Jan 2012",
     "location": "Glenview, IL",
-    "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQIj4KICA8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxMiIgZmlsbD0iIzFhN2U4YyIvPgogIDx0ZXh0IHg9IjMyIiB5PSIzMiIgZHk9IjAuMzVlbSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkludGVyLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1zaXplPSIzMCIgZmlsbD0iI2ZmZmZmZiI+UDwvdGV4dD4KPC9zdmc+Cg==",
+    "logo": "https://www.google.com/s2/favicons?domain=pearson.com&sz=128",
     "summary": "Produced online ancillaries across 29 K-12 math titles \u2014 iPad interactive books, whiteboard games, and thousands of visual-learning animations."
   },
   {
@@ -86,7 +86,7 @@
     "start": "Apr 2008",
     "end": "Feb 2009",
     "location": "Glenview, IL",
-    "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJQIj4KICA8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxMiIgZmlsbD0iIzFhN2U4YyIvPgogIDx0ZXh0IHg9IjMyIiB5PSIzMiIgZHk9IjAuMzVlbSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkludGVyLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1zaXplPSIzMCIgZmlsbD0iI2ZmZmZmZiI+UDwvdGV4dD4KPC9zdmc+Cg==",
+    "logo": "https://www.google.com/s2/favicons?domain=pearson.com&sz=128",
     "summary": "Created promotional materials and trained curriculum specialists on technology products."
   },
   {
@@ -113,7 +113,7 @@
     "start": "May 2004",
     "end": "Mar 2006",
     "location": "",
-    "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJITSI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiNiMjFmMjQiLz4KICA8dGV4dCB4PSIzMiIgeT0iMzIiIGR5PSIwLjM1ZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJJbnRlciwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNmZmZmZmYiPkhNPC90ZXh0Pgo8L3N2Zz4K",
+    "logo": "https://www.google.com/s2/favicons?domain=hmhco.com&sz=128",
     "summary": "Supported and trained professors nationwide, specializing in mathematics."
   }
 ]
