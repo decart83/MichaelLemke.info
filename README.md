@@ -38,9 +38,8 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Deploy
 
-Push to `master` and the GitHub Action deploys to Firebase automatically. For full details — hosting facts, the one-time secret setup, manual deploys, and troubleshooting — see **[HOSTING.md](HOSTING.md)**.
+Push to `master` and the GitHub Action deploys to Firebase automatically (project `michaellemkeinfo`, live channel). It authenticates with the repo secret `FIREBASE_SERVICE_ACCOUNT_MICHAELLEMKEINFO`. For a one-off manual deploy: `firebase deploy --only hosting`.
 
 ## Docs
 
-- **[HOSTING.md](HOSTING.md)** — hosting, DNS, and deploy instructions
 - **[DESIGN_SPEC.md](DESIGN_SPEC.md)** — design system and architecture

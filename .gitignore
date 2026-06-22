@@ -1,0 +1,12 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Node / Firebase tooling
+node_modules/
+.firebase/
+firebase-debug.log
+*.log
+
+# Local-only internal docs
+HOSTING.md
