@@ -99,10 +99,14 @@
           img.onerror = () => { img.style.display = "none"; };
           card.appendChild(img);
         }
+        if (p.tag) card.appendChild(el("span", "tag", p.tag));
         card.appendChild(el("h3", null, p.title));
         if (p.summary) card.appendChild(el("p", "muted", p.summary));
         const linkRow = el("div", "links");
-        if (p.link) linkRow.appendChild(el("a", null, "View ↗")).setAttribute("href", p.link);
+        if (p.link) {
+          const a = el("a", null, "View ↗"); a.href = p.link; a.target = "_blank"; a.rel = "noopener";
+          linkRow.appendChild(a);
+        }
         if (p.detail) linkRow.appendChild(el("a", null, "Details")).setAttribute("href", p.detail);
         card.appendChild(linkRow);
         projMount.appendChild(card);

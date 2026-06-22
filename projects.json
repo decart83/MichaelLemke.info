@@ -1,23 +1,50 @@
 [
   {
-    "title": "IL School Financials",
+    "title": "Illinois School Financials",
     "thumb": "https://michaellemke.info/images/portfolio/il_warning.png",
-    "summary": "Data visualization project on Illinois school financial health.",
+    "summary": "Tableau dashboard to help a school board understand how Illinois rates districts financially.",
     "link": "https://public.tableau.com/profile/michael.lemke#!/vizhome/IL_Schools/Dashboard",
-    "detail": "p_il_financials.html"
+    "detail": "p_il_financials.html",
+    "tag": "Data viz"
+  },
+  {
+    "title": "Illinois Teaching Diversity",
+    "thumb": "https://michaellemke.info/images/portfolio/il_teachers.png",
+    "summary": "Comparing teaching-staff diversity across Illinois districts to inform a board discussion.",
+    "link": "https://public.tableau.com/views/ILWhiteTeacherCount/NumberofcaucasianteachersinIL?:embed=y&:display_count=yes",
+    "detail": "p_il_diversity.html",
+    "tag": "Data viz"
+  },
+  {
+    "title": "Chicago Crime Dashboard",
+    "thumb": "https://michaellemke.info/images/portfolio/chicago_crime.png",
+    "summary": "Block-level view of Chicago crime to help someone find a safe neighborhood.",
+    "link": "https://public.tableau.com/profile/michael.lemke#!/vizhome/chicago_crime/Dashboard",
+    "detail": "p_crime.html",
+    "tag": "Data viz"
+  },
+  {
+    "title": "Letter Frequency",
+    "thumb": "https://michaellemke.info/images/portfolio/words.png",
+    "summary": "Conditional letter-probability dashboard built to help students crack a cryptography puzzle.",
+    "link": "https://public.tableau.com/views/word_counts/Letter_Frequency?:embed=y&:display_count=yes",
+    "detail": "p_freq.html",
+    "tag": "Data viz"
   },
   {
     "title": "Pilot Light Foundation",
     "thumb": "https://michaellemke.info/images/portfolio/pilot.png",
-    "summary": "Custom website development.",
+    "summary": "Web consulting: fixed critical crashes, added content, and improved the design.",
     "link": "http://pilotlightfund.org/",
-    "detail": "p_pilot.html"
+    "detail": "p_pilot.html",
+    "tag": "Web dev"
   },
   {
-    "title": "Chicago Crime",
-    "thumb": "https://michaellemke.info/images/portfolio/chicago_crime.png",
-    "summary": "Data visualization project exploring Chicago crime patterns.",
-    "link": "https://public.tableau.com/profile/michael.lemke#!/vizhome/chicago_crime/Dashboard",
-    "detail": "p_crime.html"
+    "title": "Delta County Historical Society",
+    "thumb": "https://michaellemke.info/images/portfolio/das_site.png",
+    "summary": "Redesign and migration to a self-service WordPress CMS, plus staff training.",
+    "link": "http://deltahistorical.org/",
+    "detail": "p_hist.html",
+    "tag": "Web dev"
   }
 ]

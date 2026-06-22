@@ -124,6 +124,7 @@ section { padding: clamp(3rem, 6vw, 5.5rem) 0; }
 
 .project-card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 8px; margin-bottom: 0.85rem; }
 .project-card .links { display: flex; gap: 1rem; margin-top: 0.5rem; font-weight: 600; font-size: 0.95rem; }
+.project-card .tag { display: inline-block; margin-bottom: 0.5rem; }
 
 /* ---------- Timeline (career) ---------- */
 .timeline { position: relative; margin-left: 8px; padding-left: 28px; border-left: 2px solid var(--border); }
@@ -140,6 +141,19 @@ section { padding: clamp(3rem, 6vw, 5.5rem) 0; }
 .social a { color: var(--muted); display: inline-flex; }
 .social a:hover { color: var(--accent); }
 .social svg { width: 22px; height: 22px; }
+
+/* ---------- Project detail pages ---------- */
+.prose { max-width: 72ch; }
+.prose h2 { font-size: 1.2rem; margin: 1.8rem 0 0.4rem; }
+.prose p { color: var(--muted); }
+.detail-figure { margin: 0 0 2rem; }
+.detail-figure img {
+  width: 100%; max-width: 760px; border-radius: var(--radius);
+  border: 1px solid var(--border); background: var(--surface);
+}
+.back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; margin-bottom: 1rem; }
+.meta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; margin: 0.5rem 0 0; }
+.tag { font-size: 0.8rem; font-weight: 600; color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); padding: 0.25rem 0.6rem; border-radius: 999px; }
 
 /* ---------- Utilities ---------- */
 .center { text-align: center; }
