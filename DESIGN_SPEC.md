@@ -37,7 +37,7 @@ Mobile-first, single-column on small screens; max content width ~1100px centered
 
 ## 4. Visual design system
 
-**Typography** — system or variable font stack for speed. Headings: a modern sans (e.g., Inter or the system UI stack); body: same family, 16–18px base, 1.6 line-height. Large, confident headings; restrained weight contrast.
+**Typography** — native **system font stack** (San Francisco / Segoe UI / Roboto), set once via the `--font` custom property. Chosen over a hosted webfont for zero render-blocking requests, nothing extra to host on the static server, and instant first paint. Body 16–18px, 1.6 line-height; large, confident headings with restrained weight contrast.
 
 **Color** — light theme by default with optional dark mode via `prefers-color-scheme`. Neutral base (near-white background, near-black text) with a single accent for links/CTAs. Suggested accent: a deep teal/blue that reads as data/technical without being generic corporate blue. All combinations meet WCAG AA.
 
@@ -100,7 +100,7 @@ With the no-build approach, a tiny vanilla-JS loader renders these on page load;
 
 ## 6. Tech & performance
 
-No jQuery, no Bootstrap. Modern CSS (Grid, Flexbox, custom properties, `clamp()` for fluid type/spacing). Minimal vanilla JS only for nav toggle, dark-mode, and JSON rendering. Self-host fonts or use the system stack to avoid render-blocking. Targets: Lighthouse 95+ across the board, total initial transfer under ~100KB, no layout shift.
+No jQuery, no Bootstrap. Modern CSS (Grid, Flexbox, custom properties, `clamp()` for fluid type/spacing). Minimal vanilla JS only for nav toggle, dark-mode, and JSON rendering. Uses the native system font stack — no webfont requests. Targets: Lighthouse 95+ across the board, total initial transfer under ~100KB, no layout shift.
 
 ## 7. Repository & deployment
 
@@ -128,8 +128,11 @@ Deployment: the live site runs on an external PHP-capable host (GitHub Pages is 
 4. Review on a branch / preview, then merge to publish.
 5. Remove legacy Bootstrap/jQuery assets once parity is confirmed.
 
-## 9. Open items
+## 9. Decisions & open items
 
-- Confirm hosting: is it GitHub Pages on `decart83.github.io` with a custom domain, or another host? (Affects whether a build step is acceptable.)
-- Confirm whether to keep WebEpoxy as a featured callout.
-- Decide: keep system font stack (fastest) or self-host Inter for brand consistency.
+Decided: **WebEpoxy callout removed.** **Font = native system stack** (no hosted webfont).
+
+Open:
+- Hosting confirmed as an external PHP host (GitHub Pages disabled). Deploy path from GitHub to that host is still manual.
+- Education details on the Career page (Northern Michigan University — degree/years) are placeholder, pending content.
+- Optional later: port the legacy project detail pages into the new template.
