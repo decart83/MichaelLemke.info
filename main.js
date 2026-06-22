@@ -63,7 +63,15 @@
         const meta = [job.title, dateRange(job.start, job.end)].filter(Boolean).join(" · ");
         if (timeline) {
           const entry = el("div", "entry");
-          entry.appendChild(el("h3", null, job.company));
+          const head = el("div", "entry-head");
+          if (job.logo) {
+            const logo = el("img", "exp-logo");
+            logo.src = job.logo; logo.alt = job.company + " logo"; logo.loading = "lazy";
+            logo.onerror = () => { logo.style.display = "none"; };
+            head.appendChild(logo);
+          }
+          head.appendChild(el("h3", null, job.company));
+          entry.appendChild(head);
           entry.appendChild(el("p", "exp-meta", meta));
           if (job.summary) entry.appendChild(el("p", "muted", job.summary));
           expMount.appendChild(entry);
