@@ -93,14 +93,14 @@
       const list = limit ? items.slice(0, limit) : items;
       list.forEach((p) => {
         const card = el("div", "card project-card");
+        const thumb = el("div", "thumb");
         if (p.thumb) {
-          const thumb = el("div", "thumb");
           const img = el("img");
           img.src = p.thumb; img.alt = p.title; img.loading = "lazy";
           img.onerror = () => { img.style.display = "none"; };
           thumb.appendChild(img);
-          card.appendChild(thumb);
         }
+        card.appendChild(thumb);
         if (p.tag) card.appendChild(el("span", "tag", p.tag));
         card.appendChild(el("h3", null, p.title));
         if (p.summary) card.appendChild(el("p", "muted", p.summary));
