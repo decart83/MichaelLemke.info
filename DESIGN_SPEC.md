@@ -104,21 +104,27 @@ No jQuery, no Bootstrap. Modern CSS (Grid, Flexbox, custom properties, `clamp()`
 
 ## 7. Repository & deployment
 
-The starter ships a **flat layout** — all assets at repo root — which keeps the static host (and any simple deploy) trivial and avoids path issues. Company logos are inlined as data URIs inside `experience.json` so there are no separate image files to manage; project thumbnails reference the existing images already hosted at michaellemke.info.
+The site uses a **flat layout** — all assets at repo root — which keeps deploys trivial and avoids path issues. Company logos are inlined as data URIs inside `experience.json` so there are no separate image files to manage; project thumbnails load from `images/portfolio/` with a gradient fallback when absent.
 
 ```
 /
 ├── index.html
 ├── career.html
 ├── projects.html
+├── p_il_financials.html · p_il_diversity.html · p_crime.html
+├── p_freq.html · p_pilot.html · p_hist.html   (project detail pages)
 ├── styles.css
 ├── main.js
 ├── experience.json      (roles + inlined logo data URIs)
 ├── projects.json
+├── firebase.json        (Firebase Hosting config)
+├── images/              (logos, portfolio thumbnails)
+├── .github/workflows/firebase-hosting-deploy.yml
+├── README.md
 └── DESIGN_SPEC.md
 ```
 
-Deployment: the live site runs on an external PHP-capable host (GitHub Pages is currently disabled), with this repo as source. Push to a branch, open a PR, review, merge, then deploy the static files to the host. If you later move to GitHub Pages, add a `CNAME` file (`michaellemke.info`) and enable Pages on the default branch. If folders are preferred later (e.g. `css/`, `js/`, `assets/`), they can be reintroduced once a build step or git-based deploy is in place.
+**Hosting & deployment.** The live site is on **Firebase Hosting** (project `michaellemkeinfo`; confirmed via DNS — A records 151.101.1.195 / 151.101.65.195, Google-managed nameservers). `firebase.json` serves the repo root. Deployment is automated: a **GitHub Action** (`.github/workflows/firebase-hosting-deploy.yml`) deploys to the live channel on every push to `master`, authenticated by the repo secret `FIREBASE_SERVICE_ACCOUNT_MICHAELLEMKEINFO`. Manual deploys: `firebase deploy --only hosting`. A GitHub Pages preview of the latest work is also published from the `redesign-2026` branch at `decart83.github.io/MichaelLemke.info/`.
 
 ## 8. Migration & rollout
 
@@ -130,9 +136,9 @@ Deployment: the live site runs on an external PHP-capable host (GitHub Pages is 
 
 ## 9. Decisions & open items
 
-Decided: **WebEpoxy callout removed.** **Font = native system stack** (no hosted webfont).
+Decided: **WebEpoxy callout removed.** **Font = native system stack** (no hosted webfont). **Hosting = Firebase Hosting** (project `michaellemkeinfo`), auto-deployed from `master` via GitHub Actions. Six project detail pages ported into the new template; Skills + Education sections added to Career.
 
 Open:
-- Hosting confirmed as an external PHP host (GitHub Pages disabled). Deploy path from GitHub to that host is still manual.
+- Add the `FIREBASE_SERVICE_ACCOUNT_MICHAELLEMKEINFO` repo secret so the deploy workflow can authenticate (one-time, via `firebase init hosting:github` or a manually generated service-account key).
+- Add the six dashboard screenshots to `images/portfolio/` (`il_warning`, `il_teachers`, `chicago_crime`, `words`, `pilot`, `das_site` `.png`) — until then, project cards/detail pages show a gradient placeholder.
 - Education details on the Career page (Northern Michigan University — degree/years) are placeholder, pending content.
-- Optional later: port the legacy project detail pages into the new template.

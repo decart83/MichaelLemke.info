@@ -6,6 +6,7 @@
       "**/.*",
       "**/node_modules/**",
       "DESIGN_SPEC.md",
+      "HOSTING.md",
       "LICENSE.txt",
       "README.md"
     ],
