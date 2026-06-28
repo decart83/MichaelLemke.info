@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-label="Michael Lemke">
+  <g stroke="#3f86a6" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="9" y="9" width="82" height="82" rx="7" stroke-width="4"/>
+    <rect x="29" y="29" width="42" height="42" rx="4" stroke-width="2.5"/>
+    <path d="M9 9 L29 29 M91 9 L71 29 M9 91 L29 71 M91 91 L71 71" stroke-width="2.5"/>
+  </g>
+  <text x="50" y="51" dy="0.34em" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="800" font-size="30" letter-spacing="-1" fill="#3f86a6">ML</text>
+</svg>
