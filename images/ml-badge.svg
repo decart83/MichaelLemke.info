@@ -1,8 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-label="Michael Lemke">
-  <g stroke="#3f86a6" stroke-linejoin="round" stroke-linecap="round">
-    <rect x="9" y="9" width="82" height="82" rx="7" stroke-width="4"/>
-    <rect x="29" y="29" width="42" height="42" rx="4" stroke-width="2.5"/>
-    <path d="M9 9 L29 29 M91 9 L71 29 M9 91 L29 71 M91 91 L71 71" stroke-width="2.5"/>
-  </g>
-  <text x="50" y="51" dy="0.34em" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="800" font-size="30" letter-spacing="-1" fill="#3f86a6">ML</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Michael Lemke">
+  <rect x="5" y="5" width="90" height="90" rx="24" fill="#0f1115" stroke="#2b3543" stroke-width="2.5"/>
+  <text x="45" y="53" text-anchor="middle" dominant-baseline="central" font-family="Inter, system-ui, Helvetica, Arial, sans-serif" font-weight="800" font-size="44" letter-spacing="-4" fill="#e6edf3">ml</text>
+  <circle cx="72" cy="66" r="7.5" fill="#38bdf8"/>
 </svg>
