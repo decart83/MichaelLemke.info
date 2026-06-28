@@ -61,7 +61,10 @@ p { margin: 0 0 1rem; }
   border-bottom: 1px solid var(--border);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-.brand { font-weight: 800; letter-spacing: -0.02em; color: var(--text); }
+.brand { font-weight: 800; letter-spacing: -0.02em; color: var(--text); display: inline-flex; align-items: center; gap: 0.55rem; }
+.brand-logo { width: 30px; height: 30px; flex: 0 0 30px; display: block; }
+.achievements { margin: 0; padding-left: 1.15rem; max-width: 74ch; }
+.achievements li { color: var(--muted); margin-bottom: 0.6rem; line-height: 1.5; }
 .brand:hover { text-decoration: none; }
 .nav-links { display: flex; gap: 1.5rem; align-items: center; }
 .nav-links a { color: var(--text); font-weight: 500; }
