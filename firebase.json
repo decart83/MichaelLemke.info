@@ -15,7 +15,7 @@
     "headers": [
       {
         "source": "**/*.@(js|css|svg|png|jpg|jpeg)",
-        "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=300" }]
       },
       {
         "source": "**/*.@(json|html)",
