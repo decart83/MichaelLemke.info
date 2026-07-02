@@ -9,6 +9,15 @@
     toggle.addEventListener("click", () => links.classList.toggle("open"));
   }
 
+  // --- Active nav highlight ---
+  const here = (location.pathname.split("/").pop() || "index.html");
+  document.querySelectorAll(".nav-links a").forEach((a) => {
+    const href = a.getAttribute("href");
+    if (href === here || (here === "index.html" && href === "index.html")) {
+      a.setAttribute("aria-current", "page");
+    }
+  });
+
   // --- Hero word rotator ---
   const rotator = document.querySelector("[data-rotator]");
   if (rotator) {

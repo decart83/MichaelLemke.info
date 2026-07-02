@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page not found — Michael Lemke</title>
+  <meta name="description" content="That page couldn't be found." />
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/images/ml-badge.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="/" class="brand"><img src="/images/ml-badge.svg" class="brand-logo" width="30" height="30" alt="" />Michael Lemke</a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/career.html">Career</a>
+        <a href="/projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">404</p>
+        <h1>This page wandered off.</h1>
+        <p class="lead">The page you're looking for doesn't exist or has moved. Let's get you back on track.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/">Back home</a>
+          <a class="btn btn-ghost" href="/projects.html">View projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p style="margin:0">&copy; <span id="year"></span> Michael Lemke.</p>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
