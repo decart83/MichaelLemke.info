@@ -46,5 +46,27 @@
     "link": "http://deltahistorical.org/",
     "detail": "p_hist.html",
     "tag": "Web dev"
+  },
+  {
+    "title": "Bedlam Study",
+    "thumb": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fbedlamstudy.com%2F?w=1200&h=900",
+    "summary": "Portfolio site for artist Brian Burroughs, showcasing his graphite \"realistic surrealism\" drawings.",
+    "link": "https://bedlamstudy.com/",
+    "detail": "p_bedlam.html",
+    "tag": "Web dev"
+  },
+  {
+    "title": "Cute Countdown",
+    "thumb": "images/cute-countdown.svg",
+    "summary": "A friendly iOS app for counting down the days to the moments that matter.",
+    "detail": "p_cutecountdown.html",
+    "tag": "iOS"
+  },
+  {
+    "title": "Sunrise Compass",
+    "thumb": "images/sunrise-compass.svg",
+    "summary": "An iOS app pairing sunrise and sunset timing with a compass to help you find the light.",
+    "detail": "p_sunrisecompass.html",
+    "tag": "iOS"
   }
 ]
