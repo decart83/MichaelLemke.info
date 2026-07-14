@@ -68,8 +68,9 @@
     "start": "Jan 2012",
     "end": "Aug 2012",
     "location": "Chicago, IL",
-    "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJVIj4KICA8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxMiIgZmlsbD0iIzFmMjkzNyIvPgogIDx0ZXh0IHg9IjMyIiB5PSIzMiIgZHk9IjAuMzVlbSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkludGVyLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1zaXplPSIzMCIgZmlsbD0iI2ZmZmZmZiI+VTwvdGV4dD4KPC9zdmc+Cg==",
-    "summary": "Managed development and maintenance across a wide range of technology and business processes."
+    "logo": "https://getuncommon.com/cdn/shop/files/uncommon_logo002_7a8012ad-32b6-4082-aa21-fa717f4d1f3c_300x.png",
+    "summary": "Managed development and maintenance across a wide range of technology and business processes.",
+    "url": "https://getuncommon.com/"
   },
   {
     "company": "Pearson Education",

@@ -62,6 +62,21 @@
   }
 
   // --- Render experience cards/timeline ---
+  // Company heading — links out to the company site when `url` is set in experience.json
+  function companyHeading(job) {
+    const h3 = el("h3", null);
+    if (job.url) {
+      const a = el("a", "exp-link", job.company);
+      a.href = job.url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      h3.appendChild(a);
+    } else {
+      h3.textContent = job.company;
+    }
+    return h3;
+  }
+
   const expMount = document.querySelector("[data-experience]");
   if (expMount) {
     const limit = parseInt(expMount.dataset.limit || "0", 10);
@@ -79,7 +94,7 @@
             logo.onerror = () => { logo.style.display = "none"; };
             head.appendChild(logo);
           }
-          head.appendChild(el("h3", null, job.company));
+          head.appendChild(companyHeading(job));
           entry.appendChild(head);
           entry.appendChild(el("p", "exp-meta", meta));
           if (job.summary) entry.appendChild(el("p", "muted", job.summary));
@@ -92,7 +107,7 @@
           logo.loading = "lazy";
           logo.onerror = () => { logo.style.display = "none"; };
           const body = el("div");
-          body.appendChild(el("h3", null, job.company));
+          body.appendChild(companyHeading(job));
           body.appendChild(el("p", "exp-meta", meta));
           card.appendChild(logo);
           card.appendChild(body);
