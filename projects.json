@@ -1,7 +1,35 @@
 [
   {
+    "title": "GenAI Use-Case Pipeline",
+    "thumb": "images/thumb-genai.svg",
+    "summary": "OpenAI-powered pipeline that summarizes customer use cases and generates individualized success plans.",
+    "detail": "p_genai.html",
+    "tag": "GenAI"
+  },
+  {
+    "title": "Facial Detection for Test Security",
+    "thumb": "images/thumb-facedetect.svg",
+    "summary": "Python computer-vision system that strengthened test-center identity verification and sharply cut security costs.",
+    "detail": "p_facedetect.html",
+    "tag": "Machine learning"
+  },
+  {
+    "title": "Test Fraud Analytics",
+    "thumb": "images/thumb-fraud.svg",
+    "summary": "Risk-ranked fraud dashboard that turned a reactive test-integrity process into a proactive, data-driven one.",
+    "detail": "p_fraud.html",
+    "tag": "Analytics"
+  },
+  {
+    "title": "Solution Blueprints Platform",
+    "thumb": "images/thumb-blueprints.svg",
+    "summary": "Industry & LOB solution blueprints and the searchable delivery platform behind them — used with Fortune 500 companies worldwide.",
+    "detail": "p_blueprints.html",
+    "tag": "Product"
+  },
+  {
     "title": "Illinois School Financials",
-    "thumb": "https://public.tableau.com/static/images/IL/IL_Schools/Dashboard/1.png",
+    "thumb": "images/thumb-il-financials.svg",
     "summary": "Tableau dashboard to help a school board understand how Illinois rates districts financially.",
     "link": "https://public.tableau.com/profile/michael.lemke#!/vizhome/IL_Schools/Dashboard",
     "detail": "p_il_financials.html",
@@ -9,7 +37,7 @@
   },
   {
     "title": "Illinois Teaching Diversity",
-    "thumb": "https://public.tableau.com/static/images/IL/ILWhiteTeacherCount/NumberofcaucasianteachersinIL/1.png",
+    "thumb": "images/thumb-il-diversity.svg",
     "summary": "Comparing teaching-staff diversity across Illinois districts to inform a board discussion.",
     "link": "https://public.tableau.com/views/ILWhiteTeacherCount/NumberofcaucasianteachersinIL?:embed=y&:display_count=yes",
     "detail": "p_il_diversity.html",
@@ -17,7 +45,7 @@
   },
   {
     "title": "Chicago Crime Dashboard",
-    "thumb": "https://public.tableau.com/static/images/ch/chicago_crime/Dashboard/1.png",
+    "thumb": "images/thumb-crime.svg",
     "summary": "Block-level view of Chicago crime to help someone find a safe neighborhood.",
     "link": "https://public.tableau.com/profile/michael.lemke#!/vizhome/chicago_crime/Dashboard",
     "detail": "p_crime.html",
@@ -25,7 +53,7 @@
   },
   {
     "title": "Letter Frequency",
-    "thumb": "https://public.tableau.com/static/images/wo/word_counts/Letter_Frequency/4_3_hd.png",
+    "thumb": "images/thumb-freq.svg",
     "summary": "Conditional letter-probability dashboard built to help students crack a cryptography puzzle.",
     "link": "https://public.tableau.com/views/word_counts/Letter_Frequency?:embed=y&:display_count=yes",
     "detail": "p_freq.html",
@@ -33,7 +61,7 @@
   },
   {
     "title": "Pilot Light Foundation",
-    "thumb": "images/pilot.jpg",
+    "thumb": "images/thumb-pilot.svg",
     "summary": "Web consulting: fixed critical crashes, added content, and improved the design.",
     "link": "https://pilotlightfund.org/",
     "detail": "p_pilot.html",
@@ -41,7 +69,7 @@
   },
   {
     "title": "Delta County Historical Society",
-    "thumb": "https://s0.wp.com/mshots/v1/http%3A%2F%2Fdeltahistorical.org%2F?w=1200&h=900",
+    "thumb": "images/thumb-delta.svg",
     "summary": "Redesign and migration to a self-service WordPress CMS, plus staff training.",
     "link": "http://deltahistorical.org/",
     "detail": "p_hist.html",
@@ -53,6 +81,14 @@
     "summary": "Portfolio site for artist Brian Burroughs, showcasing his graphite \"realistic surrealism\" drawings.",
     "link": "https://bedlamstudy.com/",
     "detail": "p_bedlam.html",
+    "tag": "Web dev"
+  },
+  {
+    "title": "U.P. Poet Laureate",
+    "thumb": "images/thumb-uppl.svg",
+    "summary": "Community platform for the U.P. Poet Laureate Foundation — poems, writer registry, writing-group map, and events.",
+    "link": "https://uppoetlaureate.org/",
+    "detail": "p_uppl.html",
     "tag": "Web dev"
   },
   {

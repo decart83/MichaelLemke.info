@@ -83,23 +83,42 @@
     const timeline = expMount.classList.contains("timeline");
     loadJSON(expMount.dataset.experience || "data/experience.json").then((items) => {
       const list = limit ? items.slice(0, limit) : items;
-      list.forEach((job) => {
-        const meta = [job.title, dateRange(job.start, job.end)].filter(Boolean).join(" · ");
-        if (timeline) {
+      if (timeline) {
+        const groups = [];
+        list.forEach((job) => {
+          const g = groups[groups.length - 1];
+          if (g && g.company === job.company) { g.roles.push(job); }
+          else { groups.push({ company: job.company, logo: job.logo, roles: [job] }); }
+        });
+        groups.forEach((g) => {
           const entry = el("div", "entry");
           const head = el("div", "entry-head");
-          if (job.logo) {
+          if (g.logo) {
             const logo = el("img", "exp-logo");
-            logo.src = job.logo; logo.alt = job.company + " logo"; logo.loading = "lazy";
+            logo.src = g.logo; logo.alt = g.company + " logo"; logo.loading = "lazy";
             logo.onerror = () => { logo.style.display = "none"; };
             head.appendChild(logo);
           }
-          head.appendChild(companyHeading(job));
+          head.appendChild(companyHeading(g.roles[0]));
           entry.appendChild(head);
-          entry.appendChild(el("p", "exp-meta", meta));
-          if (job.summary) entry.appendChild(el("p", "muted", job.summary));
+          g.roles.forEach((job) => {
+            const role = el("div", "role");
+            const line = el("p", "role-line");
+            const t = el("strong", null, job.title);
+            line.appendChild(t);
+            const dr = dateRange(job.start, job.end);
+            if (dr) line.appendChild(document.createTextNode(" · " + dr));
+            role.appendChild(line);
+            if (job.summary) role.appendChild(el("p", "muted", job.summary));
+            entry.appendChild(role);
+          });
           expMount.appendChild(entry);
-        } else {
+        });
+        return;
+      }
+      list.forEach((job) => {
+        const meta = [job.title, dateRange(job.start, job.end)].filter(Boolean).join(" · ");
+        {
           const card = el("div", "card exp-card");
           const logo = el("img", "exp-logo");
           logo.src = job.logo || "";

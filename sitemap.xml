@@ -3,6 +3,7 @@
   <url><loc>https://michaellemke.info/</loc><priority>1.0</priority></url>
   <url><loc>https://michaellemke.info/career.html</loc><priority>0.9</priority></url>
   <url><loc>https://michaellemke.info/projects.html</loc><priority>0.9</priority></url>
+  <url><loc>https://michaellemke.info/story.html</loc><priority>0.8</priority></url>
   <url><loc>https://michaellemke.info/p_il_financials.html</loc><priority>0.6</priority></url>
   <url><loc>https://michaellemke.info/p_il_diversity.html</loc><priority>0.6</priority></url>
   <url><loc>https://michaellemke.info/p_crime.html</loc><priority>0.6</priority></url>
@@ -10,6 +11,11 @@
   <url><loc>https://michaellemke.info/p_pilot.html</loc><priority>0.6</priority></url>
   <url><loc>https://michaellemke.info/p_hist.html</loc><priority>0.6</priority></url>
   <url><loc>https://michaellemke.info/p_bedlam.html</loc><priority>0.6</priority></url>
+  <url><loc>https://michaellemke.info/p_uppl.html</loc><priority>0.6</priority></url>
   <url><loc>https://michaellemke.info/p_cutecountdown.html</loc><priority>0.6</priority></url>
   <url><loc>https://michaellemke.info/p_sunrisecompass.html</loc><priority>0.6</priority></url>
+  <url><loc>https://michaellemke.info/p_genai.html</loc><priority>0.6</priority></url>
+  <url><loc>https://michaellemke.info/p_facedetect.html</loc><priority>0.6</priority></url>
+  <url><loc>https://michaellemke.info/p_fraud.html</loc><priority>0.6</priority></url>
+  <url><loc>https://michaellemke.info/p_blueprints.html</loc><priority>0.6</priority></url>
 </urlset>

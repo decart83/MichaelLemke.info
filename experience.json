@@ -6,7 +6,7 @@
     "end": "Present",
     "location": "Remote",
     "logo": "https://www.google.com/s2/favicons?domain=snowflake.com&sz=128",
-    "summary": "GTM strategy and operations for the Solution Engineering organization."
+    "summary": "Strategy & operations partner to the Field CTO organization — AI/ML, Data Engineering, and Apps & Collaboration. I use AI and data platforms (Salesforce, Sigma, Snowflake) to audit business health and drive executive business reviews, serve as the strategic bridge between SE leadership and Sales Operations, and work with Global Field Operations to design international initiatives — from product launches to theater-wide communication frameworks — in support of CRO priorities."
   },
   {
     "company": "Alteryx",
@@ -14,8 +14,8 @@
     "start": "May 2022",
     "end": "May 2025",
     "location": "Lansdale, PA · Remote",
-    "logo": "https://www.google.com/s2/favicons?domain=alteryx.com&sz=128",
-    "summary": "Built industry & LOB solution blueprints, a scalable content delivery system, and self-service data pipelines/dashboards to accelerate the democratization of analytics."
+    "logo": "https://www.alteryx.com/wp-content/themes/trifacta/assets/favicon/ms-icon-310x310.png",
+    "summary": "Led RevOps across Sales Engineering, Support, Success, Education, and Alliances (~500 people). Built industry & LOB solution blueprints used by Fortune 500 companies worldwide, a GenAI-powered use-case pipeline, and self-service analytics relied on by 400+ people."
   },
   {
     "company": "ETS",
@@ -24,7 +24,7 @@
     "end": "May 2022",
     "location": "Princeton, NJ",
     "logo": "https://www.google.com/s2/favicons?domain=ets.org&sz=128",
-    "summary": "Founded the ETS Center of Intelligence — data governance, modern analytics stack, a project-performance system that surfaced $7M in reinvestable funds, and a Python facial-detection system that cut security cost by $2M."
+    "summary": "Established the ETS Center of Intelligence — data governance, a modern self-service analytics stack, and a project performance system that surfaced significant reinvestable funds. Built a Python facial-detection system that sharply cut security costs, automated 14 business workflows, and led the Salesforce rebuild."
   },
   {
     "company": "ETS",
@@ -42,7 +42,7 @@
     "end": "May 2019",
     "location": "Greater Chicago Area",
     "logo": "https://www.google.com/s2/favicons?domain=area9lyceum.com&sz=128",
-    "summary": "Led learning architecture for adaptive education products."
+    "summary": "Built and led a team of 23 learning engineers; shipped 100+ adaptive courses for healthcare, airline, pharmaceutical, and public-sector organizations."
   },
   {
     "company": "McGraw-Hill Education",
@@ -51,7 +51,7 @@
     "end": "Apr 2018",
     "location": "Chicago, IL",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/1/13/McGraw_Hill_Education_Logo.jpg",
-    "summary": "Product leadership across higher-education digital learning."
+    "summary": "Owned the Higher Ed platform roadmap — 556 courses across 79 disciplines. Piloted a sales-activity analysis that drove 43% YOY revenue growth for the pilot team."
   },
   {
     "company": "McGraw-Hill Education",
@@ -69,7 +69,7 @@
     "end": "Aug 2012",
     "location": "Chicago, IL",
     "logo": "https://getuncommon.com/cdn/shop/files/uncommon_logo002_7a8012ad-32b6-4082-aa21-fa717f4d1f3c_300x.png",
-    "summary": "Managed development and maintenance across a wide range of technology and business processes.",
+    "summary": "Ran IT, networking, and a NetSuite-based fulfillment architecture; supported marketing campaigns with major consumer-tech, photo, and gaming brands.",
     "url": "https://getuncommon.com/"
   },
   {
@@ -79,7 +79,7 @@
     "end": "Jan 2012",
     "location": "Glenview, IL",
     "logo": "https://companieslogo.com/img/orig/PSO-90111d90.png?t=1720244493",
-    "summary": "Produced online ancillaries across 29 K-12 math titles — iPad interactive books, whiteboard games, and thousands of visual-learning animations."
+    "summary": "Managed the lifecycle of 500+ digital products across enVisionMATH and Investigations — interactive books, test generators, games, and assessment systems."
   },
   {
     "company": "Pearson Education",
