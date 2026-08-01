@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Test Fraud Analytics">
+  <defs>
+    <linearGradient id="frbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1626"/><stop offset="1" stop-color="#16233c"/>
+    </linearGradient>
+    <filter id="frglow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#frbg)"/>
+  <!-- ranked rows -->
+  <g>
+    <rect x="120" y="130" width="960" height="100" rx="16" fill="#3a1a22" stroke="#fb7185" stroke-width="4"/>
+    <rect x="120" y="270" width="960" height="100" rx="16" fill="#12233c" stroke="#31415e" stroke-width="3"/>
+    <rect x="120" y="410" width="960" height="100" rx="16" fill="#12233c" stroke="#31415e" stroke-width="3"/>
+    <rect x="120" y="550" width="960" height="100" rx="16" fill="#12233c" stroke="#31415e" stroke-width="3"/>
+  </g>
+  <!-- risk bars -->
+  <g>
+    <rect x="160" y="165" width="430" height="30" rx="15" fill="#fb7185" filter="url(#frglow)"/>
+    <rect x="160" y="305" width="330" height="30" rx="15" fill="#f59e0b"/>
+    <rect x="160" y="445" width="230" height="30" rx="15" fill="#fbbf24"/>
+    <rect x="160" y="585" width="140" height="30" rx="15" fill="#34d399"/>
+  </g>
+  <!-- confidence chips -->
+  <g font-family="'Courier New', Courier, monospace" font-size="40" font-weight="700" text-anchor="end">
+    <text x="1040" y="195" fill="#fb7185">0.97</text>
+    <text x="1040" y="335" fill="#f59e0b">0.78</text>
+    <text x="1040" y="475" fill="#fbbf24">0.54</text>
+    <text x="1040" y="615" fill="#34d399">0.21</text>
+  </g>
+  <!-- flag on top row -->
+  <g filter="url(#frglow)">
+    <line x1="668" y1="150" x2="668" y2="215" stroke="#e8eaed" stroke-width="8" stroke-linecap="round"/>
+    <path d="M668 152 L730 168 L668 186 Z" fill="#fb7185"/>
+  </g>
+  <!-- magnifier -->
+  <g filter="url(#frglow)">
+    <circle cx="905" cy="180" r="46" fill="none" stroke="#7dd3fc" stroke-width="12"/>
+    <line x1="938" y1="215" x2="975" y2="252" stroke="#7dd3fc" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>

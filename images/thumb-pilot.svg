@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Pilot Light Foundation">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1626"/><stop offset="1" stop-color="#16233c"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/><stop offset="0.6" stop-color="#38bdf8"/><stop offset="1" stop-color="#0b7285"/>
+    </linearGradient>
+    <radialGradient id="warmth"><stop offset="0" stop-color="#38bdf8" stop-opacity="0.25"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
+    <filter id="glow5"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg5)"/>
+  <circle cx="600" cy="360" r="320" fill="url(#warmth)"/>
+  <!-- burner ring -->
+  <g stroke="#31415e" stroke-width="10" fill="none">
+    <circle cx="600" cy="430" r="190"/>
+  </g>
+  <!-- burner ports -->
+  <g fill="#f59e0b" filter="url(#glow5)">
+    <circle cx="600" cy="240" r="9"/><circle cx="695" cy="266" r="9"/><circle cx="764" cy="335" r="9"/>
+    <circle cx="790" cy="430" r="9"/><circle cx="764" cy="525" r="9"/><circle cx="695" cy="594" r="9"/>
+    <circle cx="600" cy="620" r="9"/><circle cx="505" cy="594" r="9"/><circle cx="436" cy="525" r="9"/>
+    <circle cx="410" cy="430" r="9"/><circle cx="436" cy="335" r="9"/><circle cx="505" cy="266" r="9"/>
+  </g>
+  <!-- pilot flame -->
+  <g filter="url(#glow5)">
+    <path d="M600 300 C 665 380 700 430 700 495 C 700 570 655 615 600 615 C 545 615 500 570 500 495 C 500 430 535 380 600 300 Z" fill="url(#flame)"/>
+    <path d="M600 400 C 632 442 650 470 650 507 C 650 550 628 575 600 575 C 572 575 550 550 550 507 C 550 470 568 442 600 400 Z" fill="#0e1626" opacity="0.55"/>
+  </g>
+</svg>

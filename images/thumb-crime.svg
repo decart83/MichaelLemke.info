@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Chicago Crime Dashboard">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#111c30"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0e2a45"/><stop offset="1" stop-color="#123a5e"/>
+    </linearGradient>
+    <radialGradient id="hot1"><stop offset="0" stop-color="#fb7185" stop-opacity="0.85"/><stop offset="1" stop-color="#fb7185" stop-opacity="0"/></radialGradient>
+    <radialGradient id="hot2"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.8"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
+    <radialGradient id="hot3"><stop offset="0" stop-color="#38bdf8" stop-opacity="0.7"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- lake michigan -->
+  <path d="M950 0 C 900 200 920 500 1000 750 L1200 750 L1200 0 Z" fill="url(#lake)"/>
+  <path d="M950 0 C 900 200 920 500 1000 750" fill="none" stroke="#2b527a" stroke-width="4"/>
+  <!-- street grid -->
+  <g stroke="#26344d" stroke-width="5">
+    <line x1="80"  y1="0" x2="80"  y2="750"/><line x1="200" y1="0" x2="200" y2="750"/>
+    <line x1="320" y1="0" x2="320" y2="750"/><line x1="440" y1="0" x2="440" y2="750"/>
+    <line x1="560" y1="0" x2="560" y2="750"/><line x1="680" y1="0" x2="680" y2="750"/>
+    <line x1="800" y1="0" x2="810" y2="750"/><line x1="900" y1="0" x2="930" y2="750"/>
+    <line x1="0" y1="110" x2="960" y2="110"/><line x1="0" y1="230" x2="935" y2="230"/>
+    <line x1="0" y1="350" x2="930" y2="350"/><line x1="0" y1="470" x2="940" y2="470"/>
+    <line x1="0" y1="590" x2="960" y2="590"/><line x1="0" y1="700" x2="985" y2="700"/>
+  </g>
+  <!-- diagonal avenues -->
+  <g stroke="#31415e" stroke-width="6">
+    <line x1="0" y1="640" x2="700" y2="0"/>
+    <line x1="150" y1="750" x2="900" y2="120"/>
+  </g>
+  <!-- heat spots -->
+  <circle cx="380" cy="300" r="150" fill="url(#hot1)"/>
+  <circle cx="620" cy="480" r="120" fill="url(#hot2)"/>
+  <circle cx="240" cy="560" r="100" fill="url(#hot3)"/>
+  <circle cx="720" cy="180" r="90"  fill="url(#hot2)"/>
+  <!-- pins -->
+  <g fill="#fb7185"><circle cx="380" cy="300" r="14"/></g>
+  <g fill="#f59e0b"><circle cx="620" cy="480" r="12"/><circle cx="720" cy="180" r="10"/></g>
+  <g fill="#38bdf8"><circle cx="240" cy="560" r="10"/></g>
+</svg>

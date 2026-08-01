@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Facial Detection for Test Security">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1626"/><stop offset="1" stop-color="#16233c"/>
+    </linearGradient>
+    <filter id="fglow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#fbg)"/>
+  <!-- scan line -->
+  <rect x="330" y="355" width="540" height="6" fill="#38bdf8" opacity="0.35"/>
+  <!-- face silhouette -->
+  <g>
+    <ellipse cx="600" cy="330" rx="128" ry="150" fill="#1d3a5f"/>
+    <path d="M420 640 C 430 540 500 490 600 490 C 700 490 770 540 780 640 Z" fill="#1d3a5f"/>
+  </g>
+  <!-- landmark mesh -->
+  <g stroke="#38bdf8" stroke-width="3" opacity="0.85" filter="url(#fglow)">
+    <line x1="545" y1="300" x2="655" y2="300"/>
+    <line x1="545" y1="300" x2="600" y2="370"/>
+    <line x1="655" y1="300" x2="600" y2="370"/>
+    <line x1="600" y1="370" x2="555" y2="415"/>
+    <line x1="600" y1="370" x2="645" y2="415"/>
+    <line x1="555" y1="415" x2="645" y2="415"/>
+  </g>
+  <g fill="#7dd3fc" filter="url(#fglow)">
+    <circle cx="545" cy="300" r="10"/><circle cx="655" cy="300" r="10"/>
+    <circle cx="600" cy="370" r="10"/><circle cx="555" cy="415" r="10"/><circle cx="645" cy="415" r="10"/>
+  </g>
+  <!-- detection frame -->
+  <g stroke="#34d399" stroke-width="10" fill="none" stroke-linecap="round">
+    <path d="M380 220 L380 150 L450 150"/>
+    <path d="M750 150 L820 150 L820 220"/>
+    <path d="M820 560 L820 630 L750 630"/>
+    <path d="M450 630 L380 630 L380 560"/>
+  </g>
+  <!-- match badge -->
+  <g filter="url(#fglow)">
+    <circle cx="835" cy="235" r="34" fill="#34d399"/>
+    <path d="M820 235 l10 12 22 -24" fill="none" stroke="#0e1626" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

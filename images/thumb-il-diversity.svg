@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Illinois Teaching Diversity">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1626"/><stop offset="1" stop-color="#16233c"/>
+    </linearGradient>
+    <filter id="glow2"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <!-- population dot grid: 12 x 6, sparse accent dots -->
+  <g>
+    <g fill="#3b4a63">
+      <circle cx="150" cy="150" r="26"/><circle cx="240" cy="150" r="26"/><circle cx="330" cy="150" r="26"/><circle cx="420" cy="150" r="26"/><circle cx="510" cy="150" r="26"/><circle cx="600" cy="150" r="26"/><circle cx="690" cy="150" r="26"/><circle cx="780" cy="150" r="26"/><circle cx="870" cy="150" r="26"/><circle cx="1050" cy="150" r="26"/>
+      <circle cx="150" cy="240" r="26"/><circle cx="240" cy="240" r="26"/><circle cx="330" cy="240" r="26"/><circle cx="420" cy="240" r="26"/><circle cx="600" cy="240" r="26"/><circle cx="690" cy="240" r="26"/><circle cx="780" cy="240" r="26"/><circle cx="870" cy="240" r="26"/><circle cx="960" cy="240" r="26"/><circle cx="1050" cy="240" r="26"/>
+      <circle cx="150" cy="330" r="26"/><circle cx="240" cy="330" r="26"/><circle cx="330" cy="330" r="26"/><circle cx="420" cy="330" r="26"/><circle cx="510" cy="330" r="26"/><circle cx="690" cy="330" r="26"/><circle cx="780" cy="330" r="26"/><circle cx="960" cy="330" r="26"/><circle cx="1050" cy="330" r="26"/>
+      <circle cx="150" cy="420" r="26"/><circle cx="330" cy="420" r="26"/><circle cx="420" cy="420" r="26"/><circle cx="510" cy="420" r="26"/><circle cx="600" cy="420" r="26"/><circle cx="690" cy="420" r="26"/><circle cx="870" cy="420" r="26"/><circle cx="960" cy="420" r="26"/><circle cx="1050" cy="420" r="26"/>
+      <circle cx="150" cy="510" r="26"/><circle cx="240" cy="510" r="26"/><circle cx="330" cy="510" r="26"/><circle cx="420" cy="510" r="26"/><circle cx="510" cy="510" r="26"/><circle cx="600" cy="510" r="26"/><circle cx="780" cy="510" r="26"/><circle cx="870" cy="510" r="26"/><circle cx="1050" cy="510" r="26"/>
+      <circle cx="150" cy="600" r="26"/><circle cx="240" cy="600" r="26"/><circle cx="330" cy="600" r="26"/><circle cx="510" cy="600" r="26"/><circle cx="600" cy="600" r="26"/><circle cx="690" cy="600" r="26"/><circle cx="780" cy="600" r="26"/><circle cx="960" cy="600" r="26"/><circle cx="1050" cy="600" r="26"/>
+    </g>
+    <!-- the distinct voices -->
+    <g filter="url(#glow2)">
+      <circle cx="960" cy="150" r="26" fill="#38bdf8"/>
+      <circle cx="510" cy="240" r="26" fill="#f59e0b"/>
+      <circle cx="600" cy="330" r="26" fill="#fb7185"/>
+      <circle cx="870" cy="330" r="26" fill="#38bdf8"/>
+      <circle cx="240" cy="420" r="26" fill="#a78bfa"/>
+      <circle cx="780" cy="420" r="26" fill="#34d399"/>
+      <circle cx="690" cy="510" r="26" fill="#f59e0b"/>
+      <circle cx="960" cy="510" r="26" fill="#fb7185"/>
+      <circle cx="420" cy="600" r="26" fill="#38bdf8"/>
+      <circle cx="870" cy="600" r="26" fill="#34d399"/>
+    </g>
+  </g>
+</svg>

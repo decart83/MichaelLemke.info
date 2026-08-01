@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="U.P. Poet Laureate">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1a22"/><stop offset="1" stop-color="#14293a"/>
+    </linearGradient>
+    <linearGradient id="quill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/><stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="glow7"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg7)"/>
+  <!-- northern lights hint -->
+  <g opacity="0.35" filter="url(#glow7)">
+    <path d="M100 40 C 300 130 420 60 600 120 C 800 185 950 90 1120 150 L1120 40 Z" fill="#34d399" opacity="0.35"/>
+    <path d="M200 30 C 420 100 640 40 860 95 C 1000 130 1080 90 1160 110 L1160 20 Z" fill="#38bdf8" opacity="0.3"/>
+  </g>
+  <!-- pine treeline -->
+  <g fill="#12222e">
+    <path d="M0 750 L0 640 L60 640 L30 560 L90 560 L55 480 L120 480 L150 560 L210 560 L180 640 L240 640 L240 750 Z"/>
+    <path d="M940 750 L940 650 L1000 650 L965 560 L1035 560 L1000 470 L1070 470 L1105 560 L1165 560 L1135 650 L1200 650 L1200 750 Z"/>
+  </g>
+  <!-- poem lines -->
+  <g stroke="#5b7286" stroke-width="10" stroke-linecap="round">
+    <line x1="330" y1="330" x2="700" y2="330"/>
+    <line x1="330" y1="400" x2="640" y2="400"/>
+    <line x1="330" y1="470" x2="690" y2="470"/>
+    <line x1="330" y1="540" x2="520" y2="540"/>
+  </g>
+  <!-- ink flourish continuing last line -->
+  <path d="M520 540 C 620 545 680 505 745 470" fill="none" stroke="url(#quill)" stroke-width="10" stroke-linecap="round" filter="url(#glow7)"/>
+  <!-- quill -->
+  <g filter="url(#glow7)">
+    <path d="M745 470 C 800 350 900 240 1030 180 C 970 300 930 390 830 470 C 900 460 950 430 1000 390 C 940 480 860 520 770 505 Z" fill="url(#quill)"/>
+    <line x1="745" y1="470" x2="700" y2="520" stroke="#34d399" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

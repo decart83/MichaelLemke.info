@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="GenAI Use-Case Pipeline">
+  <defs>
+    <linearGradient id="gbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1626"/><stop offset="1" stop-color="#161f38"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="gglow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#gbg)"/>
+  <!-- source nodes -->
+  <g>
+    <circle cx="180" cy="200" r="46" fill="#12233c" stroke="#31415e" stroke-width="5"/>
+    <circle cx="150" cy="380" r="46" fill="#12233c" stroke="#31415e" stroke-width="5"/>
+    <circle cx="180" cy="560" r="46" fill="#12233c" stroke="#31415e" stroke-width="5"/>
+    <g stroke="#5b7286" stroke-width="7" stroke-linecap="round">
+      <line x1="160" y1="185" x2="200" y2="185"/><line x1="160" y1="205" x2="192" y2="205"/>
+      <line x1="130" y1="365" x2="170" y2="365"/><line x1="130" y1="385" x2="162" y2="385"/>
+      <line x1="160" y1="545" x2="200" y2="545"/><line x1="160" y1="565" x2="192" y2="565"/>
+    </g>
+  </g>
+  <!-- flows into AI core -->
+  <g fill="none" stroke="#31415e" stroke-width="7">
+    <path d="M226 210 C 360 250 430 300 500 345"/>
+    <path d="M196 380 C 330 380 420 378 495 376"/>
+    <path d="M226 550 C 360 510 430 460 500 410"/>
+  </g>
+  <!-- AI sparkle core -->
+  <g filter="url(#gglow)">
+    <path d="M600 250 L630 345 L725 375 L630 405 L600 500 L570 405 L475 375 L570 345 Z" fill="url(#spark)"/>
+    <path d="M690 260 l12 30 30 12 -30 12 -12 30 -12 -30 -30 -12 30 -12z" fill="#a78bfa"/>
+    <path d="M520 470 l9 22 22 9 -22 9 -9 22 -9 -22 -22 -9 22 -9z" fill="#7dd3fc"/>
+  </g>
+  <!-- output doc -->
+  <g>
+    <path d="M840 430 C 900 420 940 400 980 375" fill="none" stroke="#31415e" stroke-width="7"/>
+    <rect x="860" y="180" width="240" height="320" rx="18" fill="#12233c" stroke="#38bdf8" stroke-width="5"/>
+    <g stroke="#7dd3fc" stroke-width="9" stroke-linecap="round">
+      <line x1="895" y1="245" x2="1065" y2="245"/>
+      <line x1="895" y1="300" x2="1040" y2="300"/>
+      <line x1="895" y1="355" x2="1060" y2="355"/>
+      <line x1="895" y1="410" x2="1000" y2="410"/>
+    </g>
+    <circle cx="1075" cy="465" r="22" fill="#34d399"/>
+    <path d="M1065 465 l7 8 14 -16" fill="none" stroke="#0e1626" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M725 375 C 780 375 810 377 858 385" fill="none" stroke="#31415e" stroke-width="7"/>
+</svg>
