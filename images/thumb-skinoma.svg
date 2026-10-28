@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Skinoma Bars">
+  <defs>
+    <linearGradient id="kbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1a16"/><stop offset="1" stop-color="#26241d"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2e6d0"/><stop offset="1" stop-color="#d9c39c"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8c9b6"/><stop offset="1" stop-color="#c99b82"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cfd8c4"/><stop offset="1" stop-color="#a4b394"/>
+    </linearGradient>
+    <filter id="ksoft"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="0.45"/></filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#kbg)"/>
+  <!-- stacked soap bars -->
+  <g filter="url(#ksoft)">
+    <rect x="330" y="430" width="540" height="130" rx="26" fill="url(#bar3)"/>
+    <rect x="360" y="300" width="480" height="130" rx="26" fill="url(#bar2)"/>
+    <rect x="395" y="172" width="410" height="130" rx="26" fill="url(#bar1)"/>
+  </g>
+  <!-- stamped mark on top bar -->
+  <text x="600" y="258" text-anchor="middle" font-family="Georgia, serif" font-size="62" font-weight="600" fill="#8a7250" letter-spacing="4">Skinoma</text>
+  <!-- botanicals -->
+  <g fill="#7d9068">
+    <ellipse cx="250" cy="600" rx="58" ry="20" transform="rotate(-25 250 600)"/>
+    <ellipse cx="300" cy="640" rx="46" ry="16" transform="rotate(15 300 640)"/>
+    <ellipse cx="950" cy="612" rx="58" ry="20" transform="rotate(22 950 612)"/>
+    <ellipse cx="900" cy="652" rx="44" ry="15" transform="rotate(-14 900 652)"/>
+  </g>
+  <!-- lather bubbles -->
+  <g fill="#f7f1e6" opacity="0.85">
+    <circle cx="880" cy="150" r="22"/><circle cx="930" cy="205" r="14"/><circle cx="845" cy="205" r="10"/>
+    <circle cx="330" cy="140" r="16"/><circle cx="285" cy="185" r="10"/>
+  </g>
+</svg>

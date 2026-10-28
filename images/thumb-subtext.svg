@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Subtext">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1a17"/><stop offset="1" stop-color="#15271f"/>
+    </linearGradient>
+    <filter id="sglow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#sbg)"/>
+  <!-- incoming message (the confusing one) -->
+  <g>
+    <path d="M150 190 h420 a26 26 0 0 1 26 26 v150 a26 26 0 0 1 -26 26 h-360 l-60 54 v-54 h-0 a26 26 0 0 1 -26 -26 v-150 a26 26 0 0 1 26 -26 z" fill="#22332c" stroke="#38564a" stroke-width="4"/>
+    <g stroke="#7d968c" stroke-width="12" stroke-linecap="round">
+      <line x1="200" y1="250" x2="520" y2="250"/>
+      <line x1="200" y1="295" x2="450" y2="295"/>
+    </g>
+    <text x="200" y="352" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#5f7a6e">?</text>
+  </g>
+  <!-- decoded reply, highlighted -->
+  <g filter="url(#sglow)">
+    <path d="M1050 400 h-420 a26 26 0 0 0 -26 26 v150 a26 26 0 0 0 26 26 h360 l60 54 v-54 a26 26 0 0 0 26 -26 v-150 a26 26 0 0 0 -26 -26 z" fill="#2f6b55" stroke="#4ea886" stroke-width="4"/>
+    <g stroke="#d8f2e7" stroke-width="12" stroke-linecap="round">
+      <line x1="660" y1="462" x2="990" y2="462"/>
+      <line x1="660" y1="507" x2="920" y2="507"/>
+      <line x1="660" y1="552" x2="960" y2="552"/>
+    </g>
+  </g>
+  <!-- retake loop between them -->
+  <g fill="none" stroke="#4ea886" stroke-width="9" stroke-linecap="round">
+    <path d="M300 470 a110 110 0 1 0 110 -110" />
+    <path d="M410 360 l-8 46 l46 -12 z" fill="#4ea886" stroke="none"/>
+  </g>
+</svg>
