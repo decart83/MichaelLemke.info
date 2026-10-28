@@ -1,5 +1,29 @@
 [
   {
+    "title": "Subtext",
+    "thumb": "images/thumb-subtext.svg",
+    "summary": "A private rehearsal space where autistic teens and adults practice real conversations with an AI playing the other side.",
+    "link": "https://subtext.guide/",
+    "detail": "p_subtext.html",
+    "tag": "Product"
+  },
+  {
+    "title": "Graph Scene",
+    "thumb": "images/thumb-graphscene.svg",
+    "summary": "Rap as a network — name-drops, features, beefs and flipped beats mapped across 34,000+ songs, with the bar that proves each one.",
+    "link": "https://thegraphscene.com/",
+    "detail": "p_graphscene.html",
+    "tag": "Data & web"
+  },
+  {
+    "title": "Skinoma Bars",
+    "thumb": "images/thumb-skinoma.svg",
+    "summary": "E-commerce storefront for a handmade small-batch soap and shower steamer maker.",
+    "link": "https://skinoma-bars.web.app/",
+    "detail": "p_skinoma.html",
+    "tag": "Web dev"
+  },
+  {
     "title": "GenAI Use-Case Pipeline",
     "thumb": "images/thumb-genai.svg",
     "summary": "OpenAI-powered pipeline that summarizes customer use cases and generates individualized success plans.",
