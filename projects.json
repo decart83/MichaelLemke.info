@@ -16,11 +16,11 @@
     "tag": "Data & web"
   },
   {
-    "title": "Skinoma Bars",
-    "thumb": "images/thumb-skinoma.svg",
-    "summary": "E-commerce storefront for a handmade small-batch soap and shower steamer maker.",
-    "link": "https://skinoma-bars.web.app/",
-    "detail": "p_skinoma.html",
+    "title": "Bedlam Study",
+    "thumb": "https://bedlamstudy.com/img/End_of_the_Rainbow.jpg",
+    "summary": "Portfolio site for artist Brian Burroughs, showcasing his graphite \"realistic surrealism\" drawings.",
+    "link": "https://bedlamstudy.com/",
+    "detail": "p_bedlam.html",
     "tag": "Web dev"
   },
   {
@@ -97,14 +97,6 @@
     "summary": "Redesign and migration to a self-service WordPress CMS, plus staff training.",
     "link": "http://deltahistorical.org/",
     "detail": "p_hist.html",
-    "tag": "Web dev"
-  },
-  {
-    "title": "Bedlam Study",
-    "thumb": "https://bedlamstudy.com/img/End_of_the_Rainbow.jpg",
-    "summary": "Portfolio site for artist Brian Burroughs, showcasing his graphite \"realistic surrealism\" drawings.",
-    "link": "https://bedlamstudy.com/",
-    "detail": "p_bedlam.html",
     "tag": "Web dev"
   },
   {
