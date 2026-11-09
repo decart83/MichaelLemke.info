@@ -30,7 +30,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap nav">
-      <a href="index.html" class="brand"><img src="images/ml-badge.svg" class="brand-logo" width="30" height="30" alt="" />Michael Lemke</a>
+      <a href="index.html" class="brand">Michael Lemke</a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
@@ -56,7 +56,7 @@
             <a class="btn btn-ghost" href="https://www.linkedin.com/in/michaellemke/" target="_blank" rel="noopener">Get in touch</a>
           </div>
         </div>
-        <div class="hero-photo">
+        <div class="hero-photo"><span class="hero-initials">ML</span>
           <img src="https://media.licdn.com/dms/image/v2/C4E03AQHiLrvtAp-KVw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517684054054?e=1787184000&amp;v=beta&amp;t=XcHAyJpfrnbYvTx04RQDLzMeeL0ftBp2r_mL4dFAhjA" alt="Michael Lemke" width="400" height="400" onerror="this.remove()" />
         </div>
       </div>
@@ -94,17 +94,40 @@
       </div>
     </section>
 
-    <!-- Experience highlights -->
+    <!-- Built with intent -->
+    <section style="padding-top:0">
+      <div class="wrap values">
+        <div>
+          <p class="eyebrow">Built with intent</p>
+          <h2>The side projects aren&rsquo;t random.</h2>
+          <p>Subtext was built with paid autistic co-designers who hold veto power. Micro Reparations is a free, ad-free guide to repair. Graph Scene is a thank-you note to a culture. Work should leave things better than it found them.</p>
+        </div>
+        <ul>
+          <li>Nothing about us without us &mdash; co-design, not consultation</li>
+          <li>Free and ad-free where it matters</li>
+          <li>Accessible by default: dark mode, no scores, plain language</li>
+          <li>Open about what&rsquo;s wrong, fixed in public</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience by industry -->
     <section id="experience">
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">Experience</p>
           <h2>Where I've worked</h2>
+          <p class="muted" style="margin:0">Grouped by industry. Click a logo to read about the role.</p>
         </div>
-        <div class="grid grid-2" data-experience="experience.json" data-limit="4"></div>
+        <div class="industries" id="industries"></div>
         <p class="mt-2"><a href="career.html">See full career &rarr;</a></p>
       </div>
     </section>
+
+    <dialog id="co-dialog" class="co-dialog">
+      <form method="dialog"><button class="co-close" aria-label="Close">&times;</button></form>
+      <div class="co-body"></div>
+    </dialog>
 
     <!-- Featured projects -->
     <section id="work">
@@ -121,7 +144,8 @@
 
   <footer class="site-footer">
     <div class="wrap footer-row">
-      <p style="margin:0">© <span id="year"></span> Michael Lemke. Designed &amp; built by Michael Lemke.</p>
+      <p style="margin:0">© <span id="year"></span> Michael Lemke · Lansdale, PA</p>
+      <span class="footer-hand">made with curiosity ✎</span>
       <div class="social">
         <a href="https://www.linkedin.com/in/michaellemke/" aria-label="LinkedIn" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.96H5.56v8.38h2.78zM6.95 8.72a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22zm11.39 9.62v-4.59c0-2.45-1.31-3.59-3.06-3.59-1.41 0-2.04.78-2.39 1.32v-1.13h-2.78c.04.78 0 8.38 0 8.38h2.78v-4.68c0-.25.02-.5.09-.68.2-.5.66-1.01 1.43-1.01 1.01 0 1.41.77 1.41 1.9v4.47h2.79z"/></svg>
@@ -138,5 +162,39 @@
 
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="main.js"></script>
+<script>
+(function(){
+  const IND = [
+    {name:"Data & Analytics", match:/Snowflake|Alteryx/},
+    {name:"Education & Assessment", match:/ETS|Area9|McGraw|Pearson|McDougal|Houghton/},
+    {name:"Consumer & Startups", match:/Uncommon/}
+  ];
+  const exp = window.__EXPERIENCE__ || [];
+  if (!exp.length) { fetch('experience.json').then(r=>r.json()).then(d=>{ window.__EXPERIENCE__=d; render(d); }); return; }
+  render(exp);
+  function render(exp){
+  const byCo = new Map();
+  exp.forEach(j => { if(!byCo.has(j.company)) byCo.set(j.company,{company:j.company,logo:j.logo,url:j.url,roles:[]}); byCo.get(j.company).roles.push(j); });
+  const mount = document.getElementById('industries'); const dlg = document.getElementById('co-dialog'); const body = dlg.querySelector('.co-body');
+  IND.forEach(ind => {
+    const col = document.createElement('div'); col.className='ind-col';
+    col.innerHTML = '<h3 class="ind-title">'+ind.name+'</h3>';
+    const list = document.createElement('div'); list.className='ind-logos';
+    [...byCo.values()].filter(c => ind.match.test(c.company)).forEach(c => {
+      const b = document.createElement('button'); b.type='button'; b.className='logo-btn'; b.title=c.company;
+      b.innerHTML = (c.logo?'<img src="'+c.logo+'" alt="">':'')+'<span>'+c.company+'</span>';
+      b.onclick = () => {
+        body.innerHTML = '<div class="co-head">'+(c.logo?'<img src="'+c.logo+'" alt="">':'')+'<div><p class="eyebrow">'+ind.name+'</p><h2>'+c.company+'</h2>'+(c.url?'<a href="'+c.url+'" target="_blank" rel="noopener">Visit site &nearr;</a>':'')+'</div></div>'
+          + c.roles.map(r => '<div class="co-role"><p class="role-line"><strong>'+r.title+'</strong> · '+r.start+' – '+r.end+(r.location?' · '+r.location:'')+'</p>'+(r.summary?'<p class="muted">'+r.summary+'</p>':'')+'</div>').join('');
+        dlg.showModal();
+      };
+      list.appendChild(b);
+    });
+    col.appendChild(list); mount.appendChild(col);
+  });
+  dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+  }
+})();
+</script>
 </body>
 </html>
