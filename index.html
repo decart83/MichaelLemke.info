@@ -117,7 +117,8 @@
         <div class="section-head">
           <p class="eyebrow">Experience</p>
           <h2>Where I've worked</h2>
-          <p class="muted" style="margin:0">Grouped by industry. Click a logo to read about the role.</p>
+          <p class="muted" style="margin:0 0 .9rem">Click a logo to read about the role. Group by:</p>
+          <div class="exp-switch" id="exp-switch" role="group" aria-label="Group experience by"></div>
         </div>
         <div class="industries" id="industries"></div>
         <p class="mt-2"><a href="career.html">See full career &rarr;</a></p>
@@ -162,39 +163,6 @@
 
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="main.js"></script>
-<script>
-(function(){
-  const IND = [
-    {name:"Data & Analytics", match:/Snowflake|Alteryx/},
-    {name:"Education & Assessment", match:/ETS|Area9|McGraw|Pearson|McDougal|Houghton/},
-    {name:"Consumer & Startups", match:/Uncommon/}
-  ];
-  const exp = window.__EXPERIENCE__ || [];
-  if (!exp.length) { fetch('experience.json').then(r=>r.json()).then(d=>{ window.__EXPERIENCE__=d; render(d); }); return; }
-  render(exp);
-  function render(exp){
-  const byCo = new Map();
-  exp.forEach(j => { if(!byCo.has(j.company)) byCo.set(j.company,{company:j.company,logo:j.logo,url:j.url,roles:[]}); byCo.get(j.company).roles.push(j); });
-  const mount = document.getElementById('industries'); const dlg = document.getElementById('co-dialog'); const body = dlg.querySelector('.co-body');
-  IND.forEach(ind => {
-    const col = document.createElement('div'); col.className='ind-col';
-    col.innerHTML = '<h3 class="ind-title">'+ind.name+'</h3>';
-    const list = document.createElement('div'); list.className='ind-logos';
-    [...byCo.values()].filter(c => ind.match.test(c.company)).forEach(c => {
-      const b = document.createElement('button'); b.type='button'; b.className='logo-btn'; b.title=c.company;
-      b.innerHTML = (c.logo?'<img src="'+c.logo+'" alt="">':'')+'<span>'+c.company+'</span>';
-      b.onclick = () => {
-        body.innerHTML = '<div class="co-head">'+(c.logo?'<img src="'+c.logo+'" alt="">':'')+'<div><p class="eyebrow">'+ind.name+'</p><h2>'+c.company+'</h2>'+(c.url?'<a href="'+c.url+'" target="_blank" rel="noopener">Visit site &nearr;</a>':'')+'</div></div>'
-          + c.roles.map(r => '<div class="co-role"><p class="role-line"><strong>'+r.title+'</strong> · '+r.start+' – '+r.end+(r.location?' · '+r.location:'')+'</p>'+(r.summary?'<p class="muted">'+r.summary+'</p>':'')+'</div>').join('');
-        dlg.showModal();
-      };
-      list.appendChild(b);
-    });
-    col.appendChild(list); mount.appendChild(col);
-  });
-  dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
-  }
-})();
-</script>
+  <script src="exp-switch.js"></script>
 </body>
 </html>
