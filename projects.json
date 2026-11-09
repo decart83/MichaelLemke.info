@@ -24,6 +24,14 @@
     "tag": "Web dev"
   },
   {
+    "title": "Micro Reparations",
+    "thumb": "images/thumb-microreparations.svg",
+    "summary": "A short, practical guide to what reparations are, what individuals can do today, and where to go deeper.",
+    "link": "https://microreparations.com/",
+    "detail": "p_microreparations.html",
+    "tag": "Web & writing"
+  },
+  {
     "title": "GenAI Use-Case Pipeline",
     "thumb": "images/thumb-genai.svg",
     "summary": "OpenAI-powered pipeline that summarizes customer use cases and generates individualized success plans.",
