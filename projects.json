@@ -1,7 +1,7 @@
 [
   {
     "title": "Subtext",
-    "thumb": "images/thumb-subtext.svg",
+    "thumb": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fsubtext.guide%2F?w=1200&h=900",
     "summary": "A private rehearsal space where autistic teens and adults practice real conversations with an AI playing the other side.",
     "link": "https://subtext.guide/",
     "detail": "p_subtext.html",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Graph Scene",
-    "thumb": "images/thumb-graphscene.svg",
+    "thumb": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fthegraphscene.com%2F?w=1200&h=900",
     "summary": "Rap as a network — name-drops, features, beefs and flipped beats mapped across 34,000+ songs, with the bar that proves each one.",
     "link": "https://thegraphscene.com/",
     "detail": "p_graphscene.html",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Micro Reparations",
-    "thumb": "images/thumb-microreparations.svg",
+    "thumb": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fmicroreparations.com%2F?w=1200&h=900",
     "summary": "A short, practical guide to what reparations are, what individuals can do today, and where to go deeper.",
     "link": "https://microreparations.com/",
     "detail": "p_microreparations.html",
@@ -61,7 +61,7 @@
   },
   {
     "title": "Illinois School Financials",
-    "thumb": "images/thumb-il-financials.svg",
+    "thumb": "https://public.tableau.com/static/images/IL/IL_Schools/Dashboard/1.png",
     "summary": "Tableau dashboard to help a school board understand how Illinois rates districts financially.",
     "link": "https://public.tableau.com/profile/michael.lemke#!/vizhome/IL_Schools/Dashboard",
     "detail": "p_il_financials.html",
@@ -69,7 +69,7 @@
   },
   {
     "title": "Illinois Teaching Diversity",
-    "thumb": "images/thumb-il-diversity.svg",
+    "thumb": "https://public.tableau.com/static/images/IL/ILWhiteTeacherCount/NumberofcaucasianteachersinIL/1.png",
     "summary": "Comparing teaching-staff diversity across Illinois districts to inform a board discussion.",
     "link": "https://public.tableau.com/views/ILWhiteTeacherCount/NumberofcaucasianteachersinIL?:embed=y&:display_count=yes",
     "detail": "p_il_diversity.html",
@@ -77,7 +77,7 @@
   },
   {
     "title": "Chicago Crime Dashboard",
-    "thumb": "images/thumb-crime.svg",
+    "thumb": "https://public.tableau.com/static/images/ch/chicago_crime/Dashboard/1.png",
     "summary": "Block-level view of Chicago crime to help someone find a safe neighborhood.",
     "link": "https://public.tableau.com/profile/michael.lemke#!/vizhome/chicago_crime/Dashboard",
     "detail": "p_crime.html",
@@ -85,7 +85,7 @@
   },
   {
     "title": "Letter Frequency",
-    "thumb": "images/thumb-freq.svg",
+    "thumb": "https://public.tableau.com/static/images/wo/word_counts/Letter_Frequency/4_3_hd.png",
     "summary": "Conditional letter-probability dashboard built to help students crack a cryptography puzzle.",
     "link": "https://public.tableau.com/views/word_counts/Letter_Frequency?:embed=y&:display_count=yes",
     "detail": "p_freq.html",
@@ -93,7 +93,7 @@
   },
   {
     "title": "Pilot Light Foundation",
-    "thumb": "images/thumb-pilot.svg",
+    "thumb": "images/pilot.jpg",
     "summary": "Web consulting: fixed critical crashes, added content, and improved the design.",
     "link": "https://pilotlightfund.org/",
     "detail": "p_pilot.html",
@@ -101,7 +101,7 @@
   },
   {
     "title": "Delta County Historical Society",
-    "thumb": "images/thumb-delta.svg",
+    "thumb": "https://s0.wp.com/mshots/v1/http%3A%2F%2Fdeltahistorical.org%2F?w=1200&h=900",
     "summary": "Redesign and migration to a self-service WordPress CMS, plus staff training.",
     "link": "http://deltahistorical.org/",
     "detail": "p_hist.html",
@@ -109,7 +109,7 @@
   },
   {
     "title": "U.P. Poet Laureate",
-    "thumb": "images/thumb-uppl.svg",
+    "thumb": "https://s0.wp.com/mshots/v1/https%3A%2F%2Fuppoetlaureate.org%2F?w=1200&h=900",
     "summary": "Community platform for the U.P. Poet Laureate Foundation — poems, writer registry, writing-group map, and events.",
     "link": "https://uppoetlaureate.org/",
     "detail": "p_uppl.html",
