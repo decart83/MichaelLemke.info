@@ -1,0 +1,67 @@
+# One-off: copy hotlinked images into images/ so the site no longer depends on third-party hosts.
+# Run manually from the Actions tab. Commits whatever downloads successfully; safe to re-run.
+name: Fetch remote assets
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download images
+        shell: bash
+        run: |
+          set -u
+          mkdir -p images
+          ok=0; bad=0
+          get() {  # get <dest> <url> [min_bytes]
+            local dest="images/$1" url="$2" min="${3:-500}"
+            for i in 1 2 3 4 5; do
+              if curl -fsSL -A "Mozilla/5.0" --max-time 60 -o "$dest.tmp" "$url"; then
+                size=$(stat -c%s "$dest.tmp")
+                if [ "$size" -ge "$min" ] && file "$dest.tmp" | grep -qiE 'image|PNG|JPEG'; then
+                  mv "$dest.tmp" "$dest"; echo "OK   $1 ($size bytes)"; ok=$((ok+1)); return 0
+                fi
+              fi
+              sleep 15   # mShots returns a placeholder until the screenshot is generated
+            done
+            rm -f "$dest.tmp"; echo "FAIL $1"; bad=$((bad+1))
+          }
+          MS="https://s0.wp.com/mshots/v1"
+          get headshot.jpg 'https://media.licdn.com/dms/image/v2/C4E03AQHiLrvtAp-KVw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517684051259?e=1795651200&v=beta&t=wNCpJChcAgLx9z0ZteOAfVvzLiFZbAu5VbydLbzsgME' 5000
+          get logo-snowflake.png 'https://www.google.com/s2/favicons?domain=snowflake.com&sz=128'
+          get logo-alteryx.png   'https://www.alteryx.com/wp-content/themes/trifacta/assets/favicon/ms-icon-310x310.png'
+          get logo-ets.png       'https://www.google.com/s2/favicons?domain=ets.org&sz=128'
+          get logo-area9.png     'https://www.google.com/s2/favicons?domain=area9lyceum.com&sz=128'
+          get logo-mcgrawhill.jpg 'https://upload.wikimedia.org/wikipedia/commons/1/13/McGraw_Hill_Education_Logo.jpg'
+          get logo-pearson.png   'https://companieslogo.com/img/orig/PSO-90111d90.png?t=1720244493'
+          get logo-uncommon.png  'https://getuncommon.com/cdn/shop/files/uncommon_logo002_7a8012ad-32b6-4082-aa21-fa717f4d1f3c_300x.png'
+          get logo-hmh.png       'https://www.google.com/s2/favicons?domain=hmhco.com&sz=128'
+          get tableau-il-financials.png 'https://public.tableau.com/static/images/IL/IL_Schools/Dashboard/1.png' 20000
+          get tableau-il-diversity.png  'https://public.tableau.com/static/images/IL/ILWhiteTeacherCount/NumberofcaucasianteachersinIL/1.png' 20000
+          get tableau-crime.png         'https://public.tableau.com/static/images/ch/chicago_crime/Dashboard/1.png' 20000
+          get tableau-freq.png          'https://public.tableau.com/static/images/wo/word_counts/Letter_Frequency/4_3_hd.png' 20000
+          get bedlam-end-of-the-rainbow.jpg 'https://bedlamstudy.com/img/End_of_the_Rainbow.jpg' 20000
+          get og-graphscene.png         'https://thegraphscene.com/img/og-card.png?v=108' 20000
+          get og-microreparations.png   'https://microreparations.web.app/og-image.png' 20000
+          get shot-subtext.jpg          "$MS/https%3A%2F%2Fsubtext.guide%2F?w=1200&h=900" 30000
+          get shot-graphscene.jpg       "$MS/https%3A%2F%2Fthegraphscene.com%2F?w=1200&h=900" 30000
+          get shot-microreparations.jpg "$MS/https%3A%2F%2Fmicroreparations.com%2F?w=1200&h=900" 30000
+          get shot-uppl.jpg             "$MS/https%3A%2F%2Fuppoetlaureate.org%2F?w=1200&h=900" 30000
+          get shot-delta.jpg            "$MS/http%3A%2F%2Fdeltahistorical.org%2F?w=1200&h=900" 30000
+          echo "::notice::downloaded $ok, failed $bad"
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "Self-host previously hotlinked images"
+          git push
