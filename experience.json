@@ -5,7 +5,7 @@
     "start": "May 2025",
     "end": "Present",
     "location": "Remote",
-    "logo": "https://www.google.com/s2/favicons?domain=snowflake.com&sz=128",
+    "logo": "images/logo-snowflake.png",
     "summary": "Strategy & operations partner to the Field CTO organization — AI/ML, Data Engineering, and Apps & Collaboration. I use AI and data platforms (Salesforce, Sigma, Snowflake) to audit business health and drive executive business reviews, serve as the strategic bridge between SE leadership and Sales Operations, and work with Global Field Operations to design international initiatives — from product launches to theater-wide communication frameworks — in support of CRO priorities."
   },
   {
@@ -14,7 +14,7 @@
     "start": "May 2022",
     "end": "May 2025",
     "location": "Lansdale, PA · Remote",
-    "logo": "https://www.alteryx.com/wp-content/themes/trifacta/assets/favicon/ms-icon-310x310.png",
+    "logo": "images/logo-alteryx.png",
     "summary": "Led RevOps across Sales Engineering, Support, Success, Education, and Alliances (~500 people). Built industry & LOB solution blueprints used by Fortune 500 companies worldwide, a GenAI-powered use-case pipeline, and self-service analytics relied on by 400+ people."
   },
   {
@@ -23,7 +23,7 @@
     "start": "Nov 2020",
     "end": "May 2022",
     "location": "Princeton, NJ",
-    "logo": "https://www.google.com/s2/favicons?domain=ets.org&sz=128",
+    "logo": "images/logo-ets.png",
     "summary": "Established the ETS Center of Intelligence — data governance, a modern self-service analytics stack, and a project performance system that surfaced significant reinvestable funds. Built a Python facial-detection system that sharply cut security costs, automated 14 business workflows, and led the Salesforce rebuild."
   },
   {
@@ -32,7 +32,7 @@
     "start": "May 2019",
     "end": "Nov 2020",
     "location": "Princeton, NJ",
-    "logo": "https://www.google.com/s2/favicons?domain=ets.org&sz=128",
+    "logo": "images/logo-ets.png",
     "summary": "Led market exploration in China, partnered with TAL on an English-language-learning app, and built a data automation framework with Chinese partners."
   },
   {
@@ -41,7 +41,7 @@
     "start": "Apr 2018",
     "end": "May 2019",
     "location": "Greater Chicago Area",
-    "logo": "https://www.google.com/s2/favicons?domain=area9lyceum.com&sz=128",
+    "logo": "images/logo-area9.png",
     "summary": "Built and led a team of 23 learning engineers; shipped 100+ adaptive courses for healthcare, airline, pharmaceutical, and public-sector organizations."
   },
   {
@@ -50,7 +50,7 @@
     "start": "Feb 2016",
     "end": "Apr 2018",
     "location": "Chicago, IL",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/13/McGraw_Hill_Education_Logo.jpg",
+    "logo": "images/logo-mcgrawhill.jpg",
     "summary": "Owned the Higher Ed platform roadmap — 556 courses across 79 disciplines. Piloted a sales-activity analysis that drove 43% YOY revenue growth for the pilot team."
   },
   {
@@ -59,7 +59,7 @@
     "start": "Sep 2012",
     "end": "Feb 2016",
     "location": "Chicago, IL",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/13/McGraw_Hill_Education_Logo.jpg",
+    "logo": "images/logo-mcgrawhill.jpg",
     "summary": "Managed the technical components of McGraw-Hill's Higher Education Math titles."
   },
   {
@@ -68,7 +68,7 @@
     "start": "Jan 2012",
     "end": "Aug 2012",
     "location": "Chicago, IL",
-    "logo": "https://getuncommon.com/cdn/shop/files/uncommon_logo002_7a8012ad-32b6-4082-aa21-fa717f4d1f3c_300x.png",
+    "logo": "images/logo-uncommon.png",
     "summary": "Ran IT, networking, and a NetSuite-based fulfillment architecture; supported marketing campaigns with major consumer-tech, photo, and gaming brands.",
     "url": "https://getuncommon.com/"
   },
@@ -78,7 +78,7 @@
     "start": "Feb 2009",
     "end": "Jan 2012",
     "location": "Glenview, IL",
-    "logo": "https://companieslogo.com/img/orig/PSO-90111d90.png?t=1720244493",
+    "logo": "images/logo-pearson.png",
     "summary": "Managed the lifecycle of 500+ digital products across enVisionMATH and Investigations — interactive books, test generators, games, and assessment systems."
   },
   {
@@ -87,7 +87,7 @@
     "start": "Apr 2008",
     "end": "Feb 2009",
     "location": "Glenview, IL",
-    "logo": "https://companieslogo.com/img/orig/PSO-90111d90.png?t=1720244493",
+    "logo": "images/logo-pearson.png",
     "summary": "Created promotional materials and trained curriculum specialists on technology products."
   },
   {
@@ -114,7 +114,7 @@
     "start": "May 2004",
     "end": "Mar 2006",
     "location": "",
-    "logo": "https://www.google.com/s2/favicons?domain=hmhco.com&sz=128",
+    "logo": "images/logo-hmh.png",
     "summary": "Supported and trained professors nationwide, specializing in mathematics."
   }
 ]
